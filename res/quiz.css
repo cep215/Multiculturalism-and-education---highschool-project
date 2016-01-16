@@ -1,0 +1,8 @@
+quiz {font-family:Arial; font-size:17px; leading:6;}
+question {text-indent:17px; color:#003399;}
+input {font-size:17px; leading:0;}
+target, source {text-align:center; leading:0}
+drag, drop {text-align:center; leading:0}
+text {display:block; text-indent:17px; }
+select {leading:0;}
+option {leading:0;}

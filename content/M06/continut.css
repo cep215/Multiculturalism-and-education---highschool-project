@@ -1,0 +1,61 @@
+body {text-align:left; font-embed:embed;}
+symbol {font-family: symbol;}
+a {font-weight: bold; text-decoration: none; color: #0000FF;} 
+
+.informatii {
+font-size: 16;
+font-family: Arial;
+line-height: 0.9;
+color: #336699;
+}
+ 
+.indicatii {
+font-size: 14;
+font-family: Arial;
+line-height: 0.9;
+color: #5C3701;
+}
+
+.drag {
+text-align:center;
+font-size: 14;
+font-family: Arial;
+line-height: 0.9;
+color: #5C3701;
+}
+
+.text {
+font-size: 16;
+font-family: Arial;
+line-height: 0.9;
+color: #336699;
+}
+
+.text2 {
+font-size: 14;
+font-family: Arial;
+line-height: 0.9;
+color: #FFFFFF;
+}
+
+.text3 {
+font-size: 14;
+font-family: Arial;
+line-height: 0.9;
+color: #336699;
+}
+
+.windowTitle {
+font-size: 16;
+font-family: Arial;
+line-height: 1.2;
+color: #FFFFFF;
+}
+
+.windowContent {
+font-size: 16;
+font-family: Arial;
+line-height: 0.9;
+color: #336699;
+margin-top: 10px;
+}

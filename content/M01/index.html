@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="scripts/style.css" type="text/css" rel="stylesheet"/>
+    <script src="scripts/swfobject.js" language="javascript"></script>
+    <script>function fGetURL (s) {window.open(s);}</script>
+  </head>
+  <body>
+    <div id="flashcontent">
+		<a href="http://www.adobe.com/go/getflashplayer">
+			For proper view of this content you need to upgrade your <b>FlashPlayer</b> version to <b>minimum</b> 9.0.115
+		</a>
+	</div>
+    <script type="text/javascript">
+      var so = new SWFObject("interfata.swf", "sco", "100%", "100%", "9.0.115", "#ffffff");
+//      so.addVariable("moment", getURLParam('moment'));
+      so.write("flashcontent");
+    </script>
+  </body>
+</html>
+
+

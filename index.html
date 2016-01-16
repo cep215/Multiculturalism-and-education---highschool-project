@@ -1,0 +1,51 @@
+<html>
+<head>
+<script>
+function loadXMLDoc(fname)
+{
+var xmlDoc;
+// code for IE
+if (window.ActiveXObject)
+  {
+  xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
+  }
+// code for Mozilla, Firefox, Opera, etc.
+else if (document.implementation
+&& document.implementation.createDocument)
+  {
+  xmlDoc=document.implementation.createDocument("","",null);
+  }
+else
+  {
+  alert('Your browser cannot handle this script');
+  }
+xmlDoc.async=false;
+xmlDoc.load(fname);
+return(xmlDoc);
+}
+
+function displayResult()
+{
+xml=loadXMLDoc("imsmanifest.xml");
+xsl=loadXMLDoc("tohtml.xsl");
+// code for IE
+if (window.ActiveXObject)
+  {
+  ex=xml.transformNode(xsl);
+  document.write(ex);
+  }
+// code for Mozilla, Firefox, Opera, etc.
+else if (document.implementation
+&& document.implementation.createDocument)
+  {
+  xsltProcessor=new XSLTProcessor();
+  xsltProcessor.importStylesheet(xsl);
+  resultDocument = xsltProcessor.transformToFragment(xml,document);
+  document.getElementById("example").appendChild(resultDocument);
+  }
+}
+</script>
+</head>
+<body id="example" onLoad="displayResult()">
+</body>
+</html>
